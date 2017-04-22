@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  YPReusableController
+//
+//  Created by zhiai on 16/2/26.
+//  Copyright © 2016年 tyiti. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AllUrl.h"
+#import "ASIHTTPRequest.h"
+#import "SVProgressHUD.h"
+#import "JSON.h"
+#import "UIImageView+WebCache.h"
+#import <QuartzCore/QuartzCore.h>
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+#endif
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+#import "Header.h"
+#import "YPReusableControllerConst.h"
+
+#endif
